@@ -15,7 +15,7 @@ test("works without then", async () => {
   console.log(_res.body)
 })
 
-test("crashes with then", () => {
+test("crashes with then or catch", () => {
   request(app())
     .get("/user")
     .then((res) => console.log(res.body)) // comment to prevent crashing
