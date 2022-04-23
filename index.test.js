@@ -10,7 +10,7 @@ function app() {
   return app
 }
 
-test.only("works without then", async () => {
+test("works without then", async () => {
   let _res = await request(app()).get("/user")
   console.log(_res.body)
 })
@@ -19,4 +19,5 @@ test("crashes with then", () => {
   request(app())
     .get("/user")
     .then((res) => console.log(res.body)) // comment to prevent crashing
+    .catch() // comment to prevent crashing
 })
