@@ -1,0 +1,25 @@
+{
+  "name": "vitetest_thread_crash",
+  "version": "1.0.0",
+  "description": "demo of crashing vitetest using supertest",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kswope/vitetest_thread_crash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kswope/vitetest_thread_crash/issues"
+  },
+  "homepage": "https://github.com/kswope/vitetest_thread_crash#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "express": "^4.17.3",
+    "supertest": "^6.2.2",
+    "vitest": "^0.9.4"
+  }
+}
