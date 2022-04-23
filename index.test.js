@@ -10,7 +10,11 @@ function app() {
   return app
 }
 
-test("works without then", async () => {
+test("simple promise works", () => {
+  Promise.resolve("blah").then((x) => console.log(x))
+})
+
+test("supertest works without then", async () => {
   let _res = await request(app()).get("/user")
   console.log(_res.body)
 })
